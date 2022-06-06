@@ -4,7 +4,7 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-    /* border: red 2px solid; */
+    /* border: lawngreen 1px solid; */
 }
 
 :root {
@@ -15,13 +15,13 @@
     --amari-fondo: #ffefba;
     --azul-letra:#085078;
     --verde-chillon: #32CD32	;
-    --verde-oscuro: #228B22
-    
+    --verde-oscuro: #228B22;
+    --verde-oscuron: #006400;
 }
 
 body {
     font-family: 'Press Start 2P', cursive;
-    background-image: url(./img/mario.jpg);
+    
     width: 100vh;
     max-width: 100%;
 }
@@ -40,33 +40,18 @@ header {
     
 }
 
-/* logo  */
-
-.logo {
-    height: 150px; 
-    width: 150px;
-    padding-bottom: 13rem;
-    
-
-}
-.logo img {
-    border-radius: 30rem;
-    border: 1px solid #666;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7); }
-
-    .logo img:hover {
-        box-shadow: 2px 2px   inset;
-        
-        
-    }
 /* seccion 1 */
 
 .debajo-header {
+    background-image: url(./img/mario.jpg);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    width: 360px;
+    height: 720px;
+    max-width: 360px;
+    
 }
 .debajo-header img {
     border-radius: 20rem;
@@ -88,6 +73,7 @@ header {
     
     height: 70%;
     max-width: 30em;
+    margin-top: 2rem;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.7)
 }
 
@@ -98,10 +84,10 @@ header {
 .contact {
     display: flex;
     flex-direction: column;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: var(--azul-letra);
     gap: 1rem;
-    margin: 1rem  4rem 0;
+    margin: 1rem  3rem 0;
     text-align: center;
     
 }
@@ -123,8 +109,9 @@ header {
 .btn-sabermas {
     background-color: var(--amari-fondo);
     color:var(--azul-letra);
-    padding: 0.5rem 1rem;
+    padding: 0.6rem 1 ;
     border-radius: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 .btn-sabermas:hover {
@@ -136,86 +123,217 @@ header {
 .nuestras-ventajas {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; 
+
     align-content: center;
+  */
     background-image: url(./img/pared.png);
-    background-size:contain;
-    /* padding: 1.2rem; */
+
+   /* background-size:contain;
+
+     padding: 2rem 0; */
+     justify-content: center;
+     align-items: center;
+     width: 360px;
+     height: 720px;
+     max-width: 360px;
 
 }
 
 
 
+/* letra h3 */
+ 
 
+  .nuestras-ventajas h3 {
+    color: #7CFC00			;
+    text-shadow: 2px 3px 0.01px var(--verde-oscuro);
+    text-align: center;  
+    background-color: var(--verde-oscuron);
 
-.nuestras-ventajas h3 {
-    color: var(--verde-chillon)			;
-    text-shadow: 2px 2px 0.01px var(--verde-oscuro);
-    text-align: center;
-    /* font-weight:900;; */
-    
+    font-size: .9rem;
+    } 
+ 
+.llevamos {
+    /* height: 70%; */
+    /* width: 20% ; */
+    /* margin-bottom: 2rem; */
+     /* max-width: 30em;  */
+     /* box-shadow: 0 0 1rem rgba(255, 253, 253, 1); */
+     
+ } 
 
-}
+ /* infocard */
+  .imagen-ventajas {
+     width: 40%;
+     border-radius: 3rem;
+     margin-top: 1rem;
+     background-color: #D2691E;
+ } 
 
-.llevamos, .tenemos, .multijugador {
-    height: 70%;
-    max-width: 30em;
-    box-shadow: 0 0 1rem rgba(255, 253, 253, 1)
-}
-
-
-
-.llevamos, .tenemos, .multijugador {
+/* card */
+.info-ventajas {
     display: flex;
-    /* flex-direction: column; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #32CD32; */
+    margin: 1rem;
+    gap: 2rem;
+}
+
+
+
+/* tercera seccion */
+
+.como-trabajamos {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; 
+
+    align-content: center;
+  */
+    background-image: url(./img/mario\ moneditas.webp);
+    background-size: cover;
+
+   /* background-size:contain;
+
+     padding: 2rem 0; */
+     justify-content: center;
+     align-items: center;
+     width: 360px;
+     height: 720px;
+     max-width: 360px;
+}
+
+
+.pagos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #32CD32; */
+    margin: 1rem 0;
+}
+
+
+.metodo-pago {
+    width: 40%;
+    border-radius: 3rem;
+    margin-top: 1rem;
+    background-color: #D2691E;
+}
+
+
+.pagos h2 {
+
+    color: #FF6347			;
+    text-shadow: 2px 3px 0.01px #DC143C;
+    text-align: center;  
+    margin-top: 1rem;
+    border-radius: 2rem;
+    font-size: .9rem;
+    margin: 1 0 1 px;
+}
+
+
+/* footer */
+
+.contactanos {
+    display: flex;
+    background-image: url(./img/pared\ azul.png);
+    background-size:cover;
+ padding: 1rem 0;
+  width: 360px;
+  height: 100px; 
+ max-width: 360px; */
+}
+
+
+ 
+
+
+
+
+
+
+
+
+
+    }
+
+
+
+     .comunicacion {
+       
+        
+        
+        
+    } 
+
+
+
+
+
+
+.sonido {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @media (min-width: 600px) */
+
+
+
+
+
+/* .llevamos, .tenemos, .multijugador {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    
+} */
 
-}
-.llevamos img {
+/* .llevamos img {
     border-radius: 0.4rem;
     border: 1px solid #666;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    width: 70%;
     
-}
+} */
 
-.tenemos img{
+/* .tenemos img{
     border-radius: 0.4rem;
     border: 1px solid #666;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.7);
-
+    margin: 1rem auto;
     
 }
 .multijugador img{
     border-radius: 0.4rem;
     border: 1px solid #666;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.7);
-    
+    margin: 1rem auto;
+} */
+
+/* .img-multijugador { */
+    /* margin: 1rem auto; */
 }
 
- /* .llevamos, .tenemos, .multijugador img {
-    height: 70%;
-    max-width: 40em;
-    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.7); */
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (min-width: 600px)
+/* .llevamos, .tenemos, .multijugador img {
+   height: 70%;
+   max-width: 40em;
+   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.7); */
