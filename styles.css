@@ -17,13 +17,14 @@
     --verde-chillon: #32CD32	;
     --verde-oscuro: #228B22;
     --verde-oscuron: #006400;
+    --naranjita: #f2c8a8;
 }
 
 body {
     font-family: 'Press Start 2P', cursive;
-    
-    width: 100vh;
+    /* width: 100vh; */
     max-width: 100%;
+    height: 100%;
 }
 a {
     text-decoration: none;
@@ -33,45 +34,40 @@ a {
     height: auto
 }
 
-header {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    
-}
+/*  */
 
 /* seccion 1 */
 
-.debajo-header {
-    background-image: url(./img/mario.jpg);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 360px;
-    height: 720px;
-    max-width: 360px;
-    
-}
-.debajo-header img {
+    .principal {
+        background-image: url(./img/imageprincipal.png);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+
+
+.principal img {
     border-radius: 20rem;
     border: 1px solid #666;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.7);
-    
+
 }
 
 
 .imagen-contact {
-    display: flex;
+    / display: flex;
     align-items:center;
     justify-content: center;
-   
+
 }
 
 .imagen-contact img {
-   
-    
-    height: 70%;
+
+
+     height: 70%;
     max-width: 30em;
     margin-top: 2rem;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.7)
@@ -89,14 +85,14 @@ header {
     gap: 1rem;
     margin: 1rem  3rem 0;
     text-align: center;
-    
+
 }
 .contact h2 {
     padding: 1rem;
     font-size: 2.5rem;
     color: var(--naranja-principal);
     text-shadow: 6px 3px 6px black;
-    
+
 }
 
 .contact p {
@@ -123,53 +119,34 @@ header {
 .nuestras-ventajas {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; 
-
-    align-content: center;
-  */
     background-image: url(./img/pared.png);
-
-   /* background-size:contain;
-
-     padding: 2rem 0; */
      justify-content: center;
      align-items: center;
-     width: 360px;
-     height: 720px;
-     max-width: 360px;
+
 
 }
 
 
 
 /* letra h3 */
- 
+
 
   .nuestras-ventajas h3 {
     color: #7CFC00			;
     text-shadow: 2px 3px 0.01px var(--verde-oscuro);
-    text-align: center;  
+    text-align: center;
     background-color: var(--verde-oscuron);
-
+margin-left: 3rem;
     font-size: .9rem;
-    } 
- 
-.llevamos {
-    /* height: 70%; */
-    /* width: 20% ; */
-    /* margin-bottom: 2rem; */
-     /* max-width: 30em;  */
-     /* box-shadow: 0 0 1rem rgba(255, 253, 253, 1); */
-     
- } 
+    }
+
 
  /* infocard */
-  .imagen-ventajas {
-     width: 40%;
-     border-radius: 3rem;
-     margin-top: 1rem;
-     background-color: #D2691E;
- } 
+  .gifmario {
+     width: 12%;
+     
+     
+ }
 
 /* card */
 .info-ventajas {
@@ -177,51 +154,50 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* background-color: #32CD32; */
-    margin: 1rem;
-    gap: 2rem;
+    margin: 0.5rem  1rem ;
 }
+
 
 
 
 /* tercera seccion */
 
+
+.titulo-pago {
+color: var(--naranja-principal);
+margin-top: 1rem;
+padding: 1rem;
+text-shadow: 6px 2px 1px black;
+}
+
 .como-trabajamos {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; 
-
-    align-content: center;
-  */
-    background-image: url(./img/mario\ moneditas.webp);
+    background-image: url(./img/bajo\ del\ mar.png);
     background-size: cover;
-
-   /* background-size:contain;
-
-     padding: 2rem 0; */
      justify-content: center;
      align-items: center;
-     width: 360px;
-     height: 720px;
-     max-width: 360px;
+     height: 700px;
+
 }
 
+/* metodos pagos  */
 
 .pagos {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* background-color: #32CD32; */
     margin: 1rem 0;
 }
 
 
 .metodo-pago {
-    width: 40%;
-    border-radius: 3rem;
-    margin-top: 1rem;
-    background-color: #D2691E;
+    width: 15%;
+    height: 20;
+    border-radius: 1rem;
+    background-color: white;
+    /* margin-top: 1rem; */
 }
 
 
@@ -229,57 +205,67 @@ header {
 
     color: #FF6347			;
     text-shadow: 2px 3px 0.01px #DC143C;
-    text-align: center;  
+    text-align: center;
     margin-top: 1rem;
     border-radius: 2rem;
     font-size: .9rem;
     margin: 1 0 1 px;
 }
 
+/* footer y tranka  */
 
-/* footer */
-
-.contactanos {
+footer {
     display: flex;
+    flex-direction: ;
+
     background-image: url(./img/pared\ azul.png);
-    background-size:cover;
- padding: 1rem 0;
-  width: 360px;
-  height: 100px; 
- max-width: 360px; */
+     justify-content: center;
+     align-items: center;
+
 }
 
 
- 
+.contactanos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 
+    /* texto contacto */
+}
+h5{
+    padding: 1rem;
+    font-size: 1rem;
+    color: var(--naranja-principal);
+    text-shadow: 6px 3px 6px black;
+    text-transform: uppercase;
+}
+
+/* redes sociales */
+
+.whatsapp img {
+    height: 70px;
+    width: 120px;
+
+}
+
+.instagram img {
+    height:45px ;
+    width: 45px
+}
 
 
-
-
-
-
-
-    }
-
-
-
-     .comunicacion {
-       
-        
-        
-        
-    } 
-
-
-
-
-
-
+/* sonido sin verse, auto play */
 .sonido {
     display: none;
 }
 
+.h6 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 10%;
+    color: #15203579;}
 
 
 
@@ -292,48 +278,137 @@ header {
 
 
 
+@media screen and (min-width: 1024px) {
 
-/* @media (min-width: 600px) */
+body {
+    
+}
+
+.principal{
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    height: 1024px;
+}
+.contact {
+    
+    background-color: var(--naranja-principal);
+    font-size: 1.5rem;
+    height: 15rem;
+    box-shadow: -4px -3px 5px 0px rgba(0,0,0,0.57) inset;
+    border-radius: 1rem;
+    
+
+}
+
+    .imagen-contact img {
 
 
+       display: none;
+   }
 
+    .contact h2 {
+        padding: 1rem;
+        font-size: 5.5rem;
+        color: var(--naranjita);
+        text-shadow: 1px 5px 0px rgba(0,0,0,0.91);
+    
+    }
+    
+    .contact p {
+        color:#ffffffc4;
+        text-shadow: 1px 1px 1px black;
+    }
+    
 
+/* 2da seccion */
 
-/* .llevamos, .tenemos, .multijugador {
+.nuestras-ventajas {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-} */
-
-/* .llevamos img {
-    border-radius: 0.4rem;
-    border: 1px solid #666;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
-    width: 70%;
-    
-} */
-
-/* .tenemos img{
-    border-radius: 0.4rem;
-    border: 1px solid #666;
-    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.7);
-    margin: 1rem auto;
-    
-}
-.multijugador img{
-    border-radius: 0.4rem;
-    border: 1px solid #666;
-    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.7);
-    margin: 1rem auto;
-} */
-
-/* .img-multijugador { */
-    /* margin: 1rem auto; */
 }
 
-/* .llevamos, .tenemos, .multijugador img {
-   height: 70%;
-   max-width: 40em;
-   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.7); */
+
+/* container */
+
+.info-ventajas {
+    display: flex;
+    flex-direction: row;
+}
+
+/* letra h3 */
+
+
+.nuestras-ventajas h3 {
+    color: whitesmoke			;
+    text-shadow: 20px 9px 10px black;
+    text-align:start;
+    background-color:transparent;
+    border-radius: 3rem;   
+     font-size: 3rem;
+     
+    }
+    
+/* infocard */
+.imagen-ventajas {
+    width: 20%;
+    border-radius: 3rem;
+    margin-left: 1rem;
+    height: ;
+    
+}
+
+
+/* tercera seccion  */
+
+.titulo-pago {
+    position: absolute;
+    
+    font-size: 2.2rem;
+    top: 0;
+    }
+
+.como-trabajamos {
+    display: flex;
+    flex-direction: row;
+    position: relative
+}
+
+.metodo-pago {
+    margin-top: 15rem;
+    height: 20rem;
+    width: 30rem;
+}
+
+.pagos h2 {
+    font-size: 1.2rem;
+}
+
+
+
+
+
+
+
+/* footer */
+
+/* texto contactoo */
+h5{
+    
+    font-size: 2rem;}
+/* redes sociales */
+
+.whatsapp img {
+    height: 120px;
+    width: 190px;
+
+}
+
+.instagram img {
+    height:80px ;
+    width: 80px
+}
+
+}
+
+/* gracias por mirar mi shitlandingpage, de a poco voy a mejorar :D  */
