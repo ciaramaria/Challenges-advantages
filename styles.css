@@ -18,13 +18,16 @@
     --verde-oscuro: #228B22;
     --verde-oscuron: #006400;
     --naranjita: #f2c8a8;
+    --fondo: #5c94fc
 }
 
 body {
     font-family: 'Press Start 2P', cursive;
     /* width: 100vh; */
     max-width: 100%;
-    height: 100%;
+    /* height: 100%; */
+    margin: 0 auto;
+    background: var(--fondo);
 }
 a {
     text-decoration: none;
@@ -44,6 +47,7 @@ a {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding: 1rem 1rem 5rem 1rem;  
 
 
     }
@@ -57,17 +61,13 @@ a {
 }
 
 
-.imagen-contact {
+/* .imagen-contact {
     / display: flex;
     align-items:center;
-    justify-content: center;
-
-}
+    justify-content: center;} */
 
 .imagen-contact img {
-
-
-     height: 70%;
+    height: 70%;
     max-width: 30em;
     margin-top: 2rem;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.7)
@@ -138,8 +138,10 @@ a {
     background-color: var(--verde-oscuron);
 margin-left: 3rem;
     font-size: .9rem;
+    
     }
 
+    
 
  /* infocard */
   .gifmario {
@@ -154,7 +156,7 @@ margin-left: 3rem;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 0.5rem  1rem ;
+    margin: .5rem  1rem ;
 }
 
 
@@ -178,8 +180,8 @@ text-shadow: 6px 2px 1px black;
      justify-content: center;
      align-items: center;
      height: 700px;
-
 }
+
 
 /* metodos pagos  */
 
@@ -189,7 +191,36 @@ text-shadow: 6px 2px 1px black;
     align-items: center;
     justify-content: center;
     margin: 1rem 0;
+    
 }
+
+.pagos img {
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.pagos:hover img {
+    box-shadow: -12px 10px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: -12px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: -12px 10px 5px 0px rgba(0,0,0,0.75);
+
+transform: rotate(11deg);
+-webkit-transform: rotate(11deg);
+-moz-transform: rotate(11deg);
+}
+
+
+.pagos{
+   
+   transition: .5s linear;
+ }
+ .pagos:hover{
+   -webkit-transform: scale(.5);
+   transform: scale(1s);
+   
+ }
+
 
 
 .metodo-pago {
@@ -210,7 +241,22 @@ text-shadow: 6px 2px 1px black;
     border-radius: 2rem;
     font-size: .9rem;
     margin: 1 0 1 px;
+    
 }
+
+.pagos::before {
+    content: ’’;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, #b47dcd, #e878a2, #eb85ab);
+    z-index: 1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease-in-out;
+  }
 
 /* footer y tranka  */
 
@@ -229,10 +275,23 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    
+}
+    .instagram:hover img{
+        transform: scale(1.2) ;
+        -webkit-transform: scale(1.2) ;
+        -moz-transform: scale(1.2) ;
 
+    }
+    .whatsapp:hover img{
+        transform: scale(1.2) ;
+-webkit-transform: scale(1.2) ;
+-moz-transform: scale(1.2) ;
+
+    }
 
     /* texto contacto */
-}
+
 h5{
     padding: 1rem;
     font-size: 1rem;
@@ -246,6 +305,7 @@ h5{
 .whatsapp img {
     height: 70px;
     width: 120px;
+    border-radius: 50em;
 
 }
 
@@ -269,8 +329,10 @@ h5{
 
 
 
-
-
+.ubicacion {
+    height: 19px;
+    width: 10px;
+}
 
 
 
@@ -281,6 +343,7 @@ h5{
 @media screen and (min-width: 1024px) {
 
 body {
+    max-width: 80%;
     
 }
 
@@ -341,11 +404,13 @@ body {
 
 .nuestras-ventajas h3 {
     color: whitesmoke			;
-    text-shadow: 20px 9px 10px black;
+    text-shadow: 2px 2px 0 #1d0707, 4px 4px 0 #1f0707, 14px 9px 0px rgba(0, 0, 0, 0.801);
     text-align:start;
     background-color:transparent;
     border-radius: 3rem;   
-     font-size: 3rem;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    
      
     }
     
@@ -354,12 +419,13 @@ body {
     width: 20%;
     border-radius: 3rem;
     margin-left: 1rem;
-    height: ;
-    
 }
 
 
 /* tercera seccion  */
+
+
+
 
 .titulo-pago {
     position: absolute;
@@ -371,13 +437,18 @@ body {
 .como-trabajamos {
     display: flex;
     flex-direction: row;
-    position: relative
+    position: relative;
+    
 }
 
 .metodo-pago {
     margin-top: 15rem;
-    height: 20rem;
-    width: 30rem;
+    height: 15rem;
+    width: 20rem;
+}
+
+.pagos img {
+    width: 90%;
 }
 
 .pagos h2 {
@@ -395,12 +466,13 @@ body {
 /* texto contactoo */
 h5{
     
-    font-size: 2rem;}
+    font-size: 1.5rem;}
 /* redes sociales */
 
 .whatsapp img {
     height: 120px;
     width: 190px;
+    
 
 }
 
@@ -412,3 +484,7 @@ h5{
 }
 
 /* gracias por mirar mi shitlandingpage, de a poco voy a mejorar :D  */
+
+/* no me dejo subir a vercel 
+
+""The name of a Project can only contain up to 100 alphanumeric lowercase characters and hyphens. "" */
